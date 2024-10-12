@@ -78,5 +78,26 @@
       background: #ffd700;
       color: #000;
     }
+  }  
+
+  .construction-banner {
+    background-color: #ffcc00; /* Bright yellow background */
+    color: #333; /* Dark text color for contrast */
+    padding: 15px 0; /* Padding for the banner */
+    text-align: center; /* Center text horizontally */
+    font-size: 1.5rem; /* Set a clear size for the banner text */
+    position: relative; /* To keep it above other content */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    width: 100%; /* Full width of the screen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    margin-bottom: 20px; /* Space between the banner and the content below */
+    
+    /* Resetting styles to avoid inheritance issues */
+    display: block; /* Ensures it takes up the full width */
+    border: none; /* Ensures no default border */
+    overflow: visible; /* Ensure banner is visible */
   }
+  
+  
 }
+
