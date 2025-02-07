@@ -13,12 +13,6 @@ const Contact = () => {
     }, 4000);
   }, []);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(
@@ -36,13 +30,6 @@ const Contact = () => {
         console.log(error);
       }
     )
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
   };
 
     return (
