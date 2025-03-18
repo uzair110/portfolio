@@ -39,8 +39,7 @@
   animation-delay: 1s;
 }
 
-.about-page,
-.contact-page {
+.about-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -95,4 +94,125 @@
     animation: fadeIn 1s 1.75s;
   }
 
+}
+
+.contact-page{
+  .text-zone {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 40%;
+    max-height: 90%;
+    vertical-align: middle;
+  }
+  h1 {
+    color: #ffd700;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 40px;
+    left: 10px;
+    top: 10px;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+
+    &::after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      line-height: 18px;
+      position: absolute;
+      bottom: -20px;
+      left: -30px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    min-width: fit-content;
+    animation: fadeIn 1s 1.75s;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .page{
+    width: 80%;
+    height: 80vh;
+  }
+  .top-tags {
+    bottom: auto;
+    top: 3px;
+    left: 12%;
+  }
+
+  .container {
+    width: 100%;
+    will-change: contents;
+    height: 80%;
+    min-height: 566px;
+    position: relative;
+    opacity: 0;
+    top: 10%;
+    left: 10%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+  .tags {    
+    left: 12%;
+    padding-top: 0px;
+    z-index: 3 ;
+  } 
+  .contact-page{
+    overflow-y: auto;
+    .text-zone {
+      position: relative;      
+      top: 1vh;
+      bottom: 1vh;
+      width: 85%;
+      height: fit-content;
+      vertical-align: middle;
+      h1{
+        font-size: 45px;
+      }
+      p{
+        font-size: 12px;
+      }
+      ul{
+        height: 50%;
+      }
+    }
+    
+  }
+  .about-page {
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: none;
+      width: 40%;
+      max-height: 90%;
+      vertical-align: middle;
+    }
+  }
 }

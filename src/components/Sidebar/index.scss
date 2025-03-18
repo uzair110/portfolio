@@ -120,69 +120,134 @@
         font-size: 15px;
         line-height: 16px;
         color: #4d4d4e;
-      }
 
-      &:hover svg {
+        &:hover svg {
           color: #ffd700;
         }
       }
     }
   }
 
-.hamburger-icon, .close-icon {
-  display: none;
+  .hamburger-icon {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
 }
 
-
 @media screen and (max-width: 1200px) {
-  .nav-bar { 
+  .nav-bar {
     background: transparent;
     position: initial;
     height: auto;
     min-height: auto;
 
-     ul, nav {
-      display: none;
-     }
+    .logo {
+      background: transparent;
+    }
 
-     nav {
-      width: 100%;
+    nav {
+      width: 60%;
       top: 0;
-      left: 0;
+      right: 0;
       background: #181818;
       height: 100%;
       margin: 0;
       z-index: 2;
       position: fixed;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       &.mobile-show {
-        display: block;
+        transform: translateX(0);
       }
 
       a {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px 0; // Add spacing between nav links
+        font-size: 22px;
+        color: #4d4d4e;
+
+        &:hover {
+          color: #ffd700;
+        }
+
+        &:after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10px;
+        }
+
+        svg {
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    ul {
+      position: fixed;
+      bottom: 20%;
+      right: 0;
+      width: 60%;
+      background: #181818;
+      z-index: 2;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &.mobile-show {
+        transform: translateX(0);
       }
 
-      a:after {
-        opacity: 1;
-        position: initial;
-        width: auto;
-        margin-left: 10PX;
-      }
+      li {
+        margin: 0 10px; // Add spacing between social media icons
 
-      a svg {
-        opacity: 1 !important;
-      }
-     }
+        a {
+          display: block;
+          font-size: 15px;
+          line-height: 16px;
+          color: #4d4d4e;
 
-     .hamburger-icon,
-     .close-icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: block;
-     }
+          &:hover svg {
+            color: #ffd700;
+          }
+        }
+      }
+    }
+
+    .hamburger-icon {
+      display: block;
+      z-index: 3;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 24px;
+
+      svg {
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }
   }
 }

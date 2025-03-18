@@ -96,8 +96,32 @@
     display: block; /* Ensures it takes up the full width */
     border: none; /* Ensures no default border */
     overflow: visible; /* Ensure banner is visible */
-  }
+  } 
   
   
 }
+
+@media screen and (max-width: 1200px){
+  .home-page {
+    height: 90%;
+    .text-zone {
+      position: relative;
+      left: 10%;
+      top: 50%;      
+      width: 90%;
+      height: 73%;
+      margin-bottom: 0;
+      h1{
+        font-size: 5vh;
+      } 
+      h2{
+        font-size: 2rem;
+      }
+      .flat-button {
+        padding: auto;
+      }
+    }
+    
+  }
+} 
 
