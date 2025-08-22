@@ -8,7 +8,7 @@ export default function AboutSection() {
         </div>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed mb-6" data-testid="text-about-paragraph-1">
-            I'm a Senior Fullstack Engineer at Folio3 with a passion for building scalable web applications and exploring cutting-edge AI technologies. My experience spans from architecting full-stack solutions with React and Node.js to implementing advanced AI agent platforms.
+            I'm a Software Engineer at Folio3 with a passion for building scalable web applications and exploring cutting-edge AI technologies. My experience spans from architecting full-stack solutions with React and Node.js to implementing advanced AI agent platforms.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6" data-testid="text-about-paragraph-2">
             With a Computer Science degree from LUMS and hands-on experience in both enterprise and startup environments, I bring a unique perspective to solving complex technical challenges. I'm particularly excited about the intersection of traditional web development and emerging AI capabilities.

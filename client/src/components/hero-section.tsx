@@ -19,7 +19,7 @@ export default function HeroSection() {
           Uzair Mustafa
         </h1>
         <h2 className="text-xl sm:text-2xl text-gray-600 mb-8" data-testid="text-hero-title">
-          Senior Fullstack Engineer
+          Software Engineer | AI Enthusiast
         </h2>
         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-12" data-testid="text-hero-tagline">
           Software engineer specializing in full-stack development. Beyond my core work, I actively build and experiment with Generative AI and AI Agent applications, bringing new ideas into working prototypes.
